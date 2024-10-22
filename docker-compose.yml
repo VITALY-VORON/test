@@ -1,0 +1,22 @@
+version: '3.0'
+
+networks:
+  main:
+    driver: bridge
+
+services:
+  main:
+    container_name: main-test
+    hostname: main-test
+    stdin_open: true
+    build:
+      context: .
+    volumes:
+      - .:/app
+      - /app/node_modules
+    ports:
+      - 3000:3000
+    restart: always
+    command: yarn start
+    networks:
+      - main

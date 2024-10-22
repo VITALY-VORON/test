@@ -1,0 +1,15 @@
+.wrapper {
+    @apply flex w-full justify-end p-10 text-white fixed top-0;
+
+    @media (max-width: 640px) {
+        @apply justify-center max-w-full sticky;
+    }
+
+    input {
+        @apply max-w-xs bg-transparent;
+
+        @media (max-width: 640px) {
+            @apply max-w-full;
+        }
+    }
+}

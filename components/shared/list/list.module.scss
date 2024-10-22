@@ -1,0 +1,33 @@
+.wrapper {
+    @apply flex flex-col gap-3 justify-center items-center min-h-screen w-screen h-full p-32;
+
+    background: linear-gradient(to top, #14072E, #0A081E);
+
+    @media (max-width: 640px) {
+        @apply p-4 flex flex-col pt-0;
+    }
+
+    .search {
+        @apply flex flex-col w-[40%] gap-3;
+
+        @media (max-width: 640px) {
+            @apply w-full;
+        }
+
+        .searchParam {
+            @apply flex gap-3 w-1/4;
+
+            @media (max-width: 640px) {
+                @apply w-full;
+            }
+
+            button {
+                @apply px-2 py-1 text-sm font-semibold text-white rounded-2xl border-none bg-[#1C1C33];
+
+                @media (max-width: 640px) {
+                    @apply text-xs px-1 py-1;
+                }
+            }
+        }
+    }
+}
