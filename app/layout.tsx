@@ -6,7 +6,7 @@ import { Suspense } from "react";
 export const metadata: Metadata = {
   title: {
     absolute: process.env.SITE_NAME,
-    template: `%s | ${process.env.SITE_NAME}`
+    template: `%s | ${process.env.SITE_NAME}`,
   },
   description: process.env.SITE_DESCRIPTION,
   metadataBase: new URL(process.env.APP_URL),
@@ -31,3 +31,4 @@ export default function RootLayout({
     </html>
   );
 }
+
